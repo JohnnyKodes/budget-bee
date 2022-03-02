@@ -1,6 +1,6 @@
 # Budget Bee
 
-![Budget Bee Logo](./src/assets/BudgetbeeLogo.png)
+<img src="./src/assets/BudgetbeeLogo.png" alt="Budget Bee Logo" width="400" />
 
 ## What is Budget Bee ?
 
