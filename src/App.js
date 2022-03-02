@@ -8,7 +8,7 @@ function App() {
   const { isDark } = useTheme();
 
   return (
-    <main className={isDark && "dark"}>
+    <main className={`${isDark && "dark"}`}>
       <div className="text-yellow-900 bg-stone-50 dark:text-white dark:bg-slate-900 min-h-screen">
         <Navbar />
         <Routes>

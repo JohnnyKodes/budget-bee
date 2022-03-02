@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full h-[70px] bg-yellow-100 dark:bg-slate-800 flex justify-between px-4">
+      <nav className="w-full h-[70px] bg-yellow-200 border-b-2 border-yellow-300 dark:bg-slate-800 dark:border-slate-700 flex justify-between px-4">
         <div className="flex items-center h-full">
           <img
             src={isDark ? darkLogo : logo}

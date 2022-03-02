@@ -12,14 +12,18 @@
 
 @layer components {
   .button {
-    @apply inline-flex justify-center px-4 py-2 text-sm font-medium text-yellow-900 bg-yellow-100 border border-transparent rounded-md hover:bg-yellow-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-yellow-500;
+    @apply inline-flex justify-center px-4 py-2 text-sm font-medium text-yellow-900 bg-yellow-200 rounded-md hover:bg-yellow-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-yellow-500 border-2 border-yellow-400 hover:border-yellow-500;
   }
 
   .darkButton {
-    @apply inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-slate-700 border border-transparent rounded-md hover:bg-slate-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-slate-500;
+    @apply inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-slate-700 border-2 border-slate-500 rounded-md hover:bg-slate-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-slate-500;
   }
 
   .smallIcon {
     @apply cursor-pointer w-8 h-8 hover:bg-yellow-100 hover:bg-opacity-50 rounded-full p-1 dark:hover:bg-white  dark:hover:bg-opacity-5 dark:text-white;
+  }
+
+  .warningButton {
+    @apply inline-flex justify-center px-2 py-1 text-xs font-medium text-red-800 bg-transparent rounded-md border-2 border-red-600 hover:bg-red-500 hover:border-red-500 hover:text-white transition ease-in;
   }
 }
