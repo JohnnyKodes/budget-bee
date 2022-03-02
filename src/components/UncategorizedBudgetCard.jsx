@@ -12,7 +12,15 @@ const UncategorizedBudgetCard = (props) => {
   );
   if (amount === 0) return null;
 
-  return <BudgetCard amount={amount} name="Uncategorized" gray {...props} />;
+  return (
+    <BudgetCard
+      id={UNCATEGORIZED_BUDGET_ID}
+      amount={amount}
+      name="Uncategorized"
+      gray
+      {...props}
+    />
+  );
 };
 
 export default UncategorizedBudgetCard;

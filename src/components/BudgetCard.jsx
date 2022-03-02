@@ -20,7 +20,9 @@ const BudgetCard = ({
     return b.amount - a.amount;
   });
 
-  if (ratio <= 25) {
+  if (gray) {
+    classNames.push("border-gray-600 dark:border-gray-400");
+  } else if (ratio <= 25) {
     classNames.push("border-green-500");
     progressBarClassNames.push("bg-green-500", "text-green-900");
   } else if (ratio <= 50) {

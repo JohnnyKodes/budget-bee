@@ -65,7 +65,7 @@ const BudgetApp = ({ enabled }) => {
         <UncategorizedBudgetCard
           onAddExpenseClick={addExpenseModal}
           onViewExpensesClick={() =>
-            viewExpensesModalBudgetId(UNCATEGORIZED_BUDGET_ID)
+            setViewExpensesModalBudgetId(UNCATEGORIZED_BUDGET_ID)
           }
         />
       </div>
