@@ -31,9 +31,12 @@ const BudgetCard = ({
   } else if (ratio <= 75) {
     classNames.push("border-yellow-500");
     progressBarClassNames.push("bg-yellow-500", "text-yellow-900");
-  } else {
+  } else if (ratio <= 100) {
     classNames.push("border-red-500");
-    progressBarClassNames.push("bg-red-500", "text-red-900");
+    progressBarClassNames.push("bg-red-500", "text-black");
+  } else {
+    classNames.push("border-red-900");
+    progressBarClassNames.push("bg-red-900", "text-black");
   }
 
   return (

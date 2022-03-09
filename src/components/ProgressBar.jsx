@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProgressBar = ({ max, amount, classNames, ratio, totalCard }) => {
-  const width = ratio.toFixed(2).toString() + "%";
+  const width = ratio > 100 ? "100%" : ratio.toFixed(2).toString() + "%";
 
   return (
     <div
@@ -18,7 +18,7 @@ const ProgressBar = ({ max, amount, classNames, ratio, totalCard }) => {
       <p
         className={`${classNames[1]} h-full flex items-center justify-center text-sm text-center w-full z-10 absolute`}
       >
-        {width}
+        {ratio.toFixed(2).toString() + "%"}
       </p>
     </div>
   );
